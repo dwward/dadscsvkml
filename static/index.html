@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Dads CSV to KML</title></head>
 <body>
-<form action="convert" method="post" enctype="multipart/form-data">
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Convert to KML" name="submit">
-</form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <div class="container">
+
+        <h1>Dad's CSV to KML Converter</h1>
+
+        <div>
+            <form action="convert" method="post" enctype="multipart/form-data">
+                <label for="fileToUpload" class="form-label">Select CSV File</label>
+                <input type="file" class="form-control form-control-lg" name="fileToUpload" id="fileToUpload">
+                <input type="submit" class="btn btn-primary text-center" value="Convert to KML" name="submit">
+            </form>
+        </div>
+    </div>
 </body>
