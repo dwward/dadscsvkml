@@ -16,7 +16,7 @@ def convert():
     b = BytesIO(kml.kml().encode('UTF-8'))
     w = FileWrapper(b)
     return Response(w, mimetype="application/vnd.google-earth.kml+xml",
-                    headers={"Content disposition": "attachment; filename=converted.kml"}, direct_passthrough=True)
+                    headers={"content-disposition": "attachment; filename=converted.kml"}, direct_passthrough=True)
 
 
 @app.route('/')
