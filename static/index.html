@@ -18,8 +18,17 @@
 
         <div>
             <form action="convert" method="post" enctype="multipart/form-data">
-                <label for="fileToUpload" class="form-label">Select CSV File</label>
-                <input type="file" class="form-control form-control-lg" name="fileToUpload" id="fileToUpload">
+                <label for="source" class=""form-label>Enter Source Name:</label>
+                <input type="source" class="form-control form-control-leg" name="source" id="source" placeholder="Leave blank for date">
+
+                <label for="file1" class="form-label">Choose Griffith CSV:</label>
+                <input type="file" class="form-control form-control-lg" name="file1" id="file1">
+
+                <!--
+                <label for="file1" class="form-label">Choose Townlands CSV:</label>
+                <input type="file" class="form-control form-control-lg" name="file2" id="file2">
+                -->
+
                 <input type="submit" class="btn btn-primary text-center" value="Convert to KML" name="submit">
             </form>
         </div>
