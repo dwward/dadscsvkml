@@ -6,8 +6,6 @@ import simplekml
 import csv
 import pandas as pd
 
-app = Flask(__name__)
-
 
 def load_townland_data():
     filename = 'townlands-no-geom-0907202-0810.csv'
@@ -22,6 +20,7 @@ def load_townland_data():
     return towndata
 
 
+app = Flask(__name__)
 app.townland = load_townland_data()
 
 
